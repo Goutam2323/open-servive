@@ -1,0 +1,608 @@
+<div class="slideout-content">
+  <div
+    class="modalsd modal-slide-in sdfade new-user-modal"
+    id="modals-slide-in"
+  >
+    <div class="modal-dialog">
+      <form
+        [formGroup]="partnershipGroup"
+        class="add-new-user modal-content pt-0"
+        (ngSubmit)="submit()"
+      >
+        <div class="modal-header mb-1">
+          <h5 class="modal-title" id="exampleModalLabel">
+            SERVIZ Partnership Form - ASP
+          </h5>
+        </div>
+
+        <div class="modal-body flex-grow-1">
+          <div class="row mb-3">
+            <div class="col-12">
+              <h5>Partnership Details</h5>
+              <hr />
+            </div>
+
+            <!-- Company Name -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="companyName" class="required">Company Name</label>
+                <input
+                  type="text"
+                  id="companyName"
+                  name="companyName"
+                  formControlName="companyName"
+                  class="form-control"
+                  placeholder="Enter company name"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Owner Name -->
+            <div class="col-12">
+              <p>Owner Name</p>
+            </div>
+
+            <div class="col-6">
+              <div class="form-group">
+                <label for="firstName" class="required">First Name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  formControlName="firstName"
+                  class="form-control"
+                  placeholder="Enter first name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="lastName" class="required">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  formControlName="lastName"
+                  class="form-control"
+                  placeholder="Enter last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <p>Office Address</p>
+              <hr />
+            </div>
+            <!-- Office Address -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="officeAddress" class="required"
+                  >Street Address</label
+                >
+                <input
+                  type="text"
+                  id="officeAddress"
+                  name="officeAddress"
+                  formControlName="officeAddress"
+                  class="form-control"
+                  placeholder="Enter office address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="addressLine2" class="required"
+                  >Address Line 2</label
+                >
+                <input
+                  type="text"
+                  id="addressLine2"
+                  name="addressLine2"
+                  formControlName="addressLine2"
+                  class="form-control"
+                  placeholder="Enter office address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="city" class="required">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  formControlName="city"
+                  class="form-control"
+                  placeholder="Enter office address"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Example of a Select dropdown -->
+            <div class="col-6">
+              <div class="form-group">
+                <label for="state" class="required">
+                  State/Region/Province</label
+                >
+                <select
+                  id="state"
+                  class="form-control"
+                  formControlName="state"
+                  required
+                >
+                  <option value="" selected disabled>Select state</option>
+                  <option value="Type1">Type 1</option>
+                  <option value="Type2">Type 2</option>
+                  <option value="Type3">Type 3</option>
+                </select>
+              </div>
+            </div>
+            <!-- Example of a Select dropdown -->
+            <div class="col-6">
+              <div class="form-group">
+                <label for="pinCode" class="required">PinCode</label>
+                <input
+                  type="text"
+                  id="pinCode"
+                  name="pinCode"
+                  formControlName="pinCode"
+                  class="form-control"
+                  placeholder="Enter office address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="partnershipType" class="required">Country</label>
+                <select
+                  id="country"
+                  class="form-control"
+                  formControlName="country"
+                  required
+                >
+                  <option value="">country</option>
+                  <option value="Type1">Type 1</option>
+                  <option value="Type2">Type 2</option>
+                  <option value="Type3">Type 3</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="col-6">
+              <div class="form-group">
+                <label for="contactNumber" class="required">
+                  Owner Contact Number</label
+                >
+                <input
+                  type="text"
+                  id="contactNumber"
+                  name="contactNumber"
+                  formControlName="contactNumber"
+                  class="form-control"
+                  placeholder="Enter contact number"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Email ID -->
+            <div class="col-6">
+              <div class="form-group">
+                <label for="email" class="required">Official Email ID</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  formControlName="email"
+                  class="form-control"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <p>Manager Name</p>
+              <hr />
+            </div>
+            <!-- Manager Details -->
+            <div class="col-6">
+              <div class="form-group">
+                <label for="managerName" class="required">First Name</label>
+                <input
+                  type="text"
+                  id="managerFirstName"
+                  name="managerFirstName"
+                  formControlName="managerFirstName"
+                  class="form-control"
+                  placeholder="Enter manager name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="managerName" class="required">Last Name</label>
+                <input
+                  type="text"
+                  id="managerLastName"
+                  name="managerLastName"
+                  formControlName="managerLastName"
+                  class="form-control"
+                  placeholder="Enter manager name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="managerContact" class="required"
+                  >Manager Contact Number</label
+                >
+                <input
+                  type="text"
+                  id="managerContact"
+                  name="managerContact"
+                  formControlName="managerContact"
+                  class="form-control"
+                  placeholder="Enter manager contact"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Serviceable Areas -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="serviceableAreas" class="required"
+                  >Existing Brand Names</label
+                >
+                <textarea
+                  id="serviceableAreas"
+                  name="serviceableAreas"
+                  formControlName="serviceableAreas"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Use , comma to separate multiple entries"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="serviceableAreas" class="required"
+                  >Base Pin Code</label
+                >
+                <textarea
+                  id="serviceableAreas"
+                  name="serviceableAreas"
+                  formControlName="basePinCode"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Use , comma to separate multiple entries"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="serviceableAreas" class="required"
+                  >Serviceable Pincodes/Areas</label
+                >
+                <textarea
+                  id="serviceableAreas"
+                  name="serviceableAreas"
+                  formControlName="serviceableAreas"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Use , comma to separate multiple entries"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <p>Categories working on (Appliances)</p>
+              <hr />
+            </div>
+            <div class="col-6" formGroupName="appliances">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="airConditioner"
+                  name="airConditioner"
+                  formControlName="airConditioner"
+                  value="Air conditioner"
+                />
+                <label class="form-check-label" for="airConditioner"
+                  >Air conditioner</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="washingMachine"
+                  name="washingMachine"
+                  formControlName="washingMachine"
+                  value="Washing Machine"
+                />
+                <label class="form-check-label" for="washingMachine"
+                  >Washing Machine</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="refrigerator"
+                  name="refrigerator"
+                  formControlName="refrigerator"
+                  value="Refrigerator"
+                />
+                <label class="form-check-label" for="refrigerator"
+                  >Refrigerator</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="television"
+                  name="television"
+                  formControlName="television"
+                  value="Television"
+                />
+                <label class="form-check-label" for="television"
+                  >Television</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="waterPurifier"
+                  name="waterPurifier"
+                  formControlName="waterPurifier"
+                  value="Water Purifier"
+                />
+                <label class="form-check-label" for="waterPurifier"
+                  >Water Purifier</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="chimney"
+                  name="chimney"
+                  formControlName="chimney"
+                  value="Chimney"
+                />
+                <label class="form-check-label" for="chimney">Chimney</label>
+              </div>
+            </div>
+
+            <div class="col-6" formGroupName="appliances">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="mixerGrinder"
+                  name="mixerGrinder"
+                  formControlName="mixerGrinder"
+                  value="Mixer Grinder"
+                />
+                <label class="form-check-label" for="mixerGrinder"
+                  >Mixer Grinder</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="geyser"
+                  name="geyser"
+                  formControlName="geyser"
+                  value="Geyser"
+                />
+                <label class="form-check-label" for="geyser">Geyser</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="fitnessAppliances"
+                  name="fitnessAppliances"
+                  formControlName="fitnessAppliances"
+                  value="Fitness Appliances"
+                />
+                <label class="form-check-label" for="fitnessAppliances"
+                  >Fitness Appliances</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="gasStove"
+                  name="gasStove"
+                  formControlName="gasStove"
+                  value="Gas Stove"
+                />
+                <label class="form-check-label" for="gasStove">Gas Stove</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="handBlender"
+                  name="handBlender"
+                  formControlName="handBlender"
+                  value="Hand Blender"
+                />
+                <label class="form-check-label" for="handBlender"
+                  >Hand Blender</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="aataChakki"
+                  name="aataChakki"
+                  formControlName="aataChakki"
+                  value="Aata Chakki"
+                />
+                <label class="form-check-label" for="aataChakki"
+                  >Aata Chakki</label
+                >
+              </div>
+            </div>
+
+            <!-- File Uploads -->
+            <div class="col-12">
+              <h5>Required Documents</h5>
+              <hr />
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <fieldset class="form-group">
+                  <label for="gstCertificate" class="required"
+                    >GST Certificate</label
+                  >
+                  <div class="custom-file">
+                    <input
+                      accept="image/*"
+                      type="file"
+                      class="custom-file-input"
+                      id="gstCertificate"
+                      name="gstCertificate"
+                      (change)="onFileSelected($event, 'gstCertificate')"
+                      required
+                    />
+                    <label class="custom-file-label" for="gstCertificate"
+                      >Choose file</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <fieldset class="form-group">
+                  <label for="aadharFront" class="required"
+                    >Aadhar Card - Front</label
+                  >
+                  <div class="custom-file">
+                    <input
+                      accept="image/*"
+                      type="file"
+                      class="custom-file-input"
+                      id="aadharFront"
+                      name="aadharFront"
+                      (change)="onFileSelected($event, 'aadharFront')"
+                      required
+                    />
+                    <label class="custom-file-label" for="aadharFront"
+                      >Choose file</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <fieldset class="form-group">
+                  <label for="aadharBack" class="required"
+                    >Aadhar Card - Back</label
+                  >
+                  <div class="custom-file">
+                    <input
+                      accept="image/*"
+                      type="file"
+                      class="custom-file-input"
+                      id="aadharBack"
+                      name="aadharBack"
+                      (change)="onFileSelected($event, 'aadharBack')"
+                      required
+                    />
+                    <label class="custom-file-label" for="aadharBack"
+                      >Choose file</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <fieldset class="form-group">
+                  <label for="panCard" class="required">Pan Card</label>
+                  <div class="custom-file">
+                    <input
+                      accept="image/*"
+                      type="file"
+                      class="custom-file-input"
+                      id="panCard"
+                      name="panCard"
+                      (change)="onFileSelected($event, 'panCard')"
+                      required
+                    />
+                    <label class="custom-file-label" for="panCard"
+                      >Choose file</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <fieldset class="form-group">
+                  <label for="cancelledCheque" class="required"
+                    >Cancelled Cheque</label
+                  >
+                  <div class="custom-file">
+                    <input
+                      accept="image/*"
+                      type="file"
+                      class="custom-file-input"
+                      id="cancelledCheque"
+                      name="cancelledCheque"
+                      (change)="onFileSelected($event, 'cancelledCheque')"
+                      required
+                    />
+                    <label class="custom-file-label" for="cancelledCheque"
+                      >Choose file</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <button
+              type="submit"
+              class="btn btn-primary mr-1"
+              (click)="submit()"
+            >
+              Submit
+            </button>
+            <button type="reset" class="btn btn-outline-secondary">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
